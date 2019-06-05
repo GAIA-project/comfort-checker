@@ -1,0 +1,21 @@
+server.port: 0
+spring:
+  main:
+    web-environment: false
+sparks:
+  cargo:
+    internal: false
+    address: https://api.sparkworks.net
+    oauth2:
+      client:
+        accessTokenUrl: ${sparks.aa.address}/aa/oauth/token
+        clientId: ''
+        clientSecret: ''
+        username: ''
+        password: ''
+  aa:
+    address: https://sso.sparkworks.net
+
+comfort.paths:
+  - "PATH.1"
+  - "PATH.2"
